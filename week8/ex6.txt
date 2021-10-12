@@ -1,0 +1,3 @@
+Page size = 8 KB = 2^13 B
+virtual address = 16 bits = 2^16
+the number of virtual pages = the number of entries in page table = 2^(16 – 13) = 2^3 

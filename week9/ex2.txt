@@ -1,0 +1,13 @@
+Number of frame: 5
+1 2 3 4 5 6 7 8 9 0
+Miss = 10, hit=0, ratio = 0
+
+1 1 2 2 3 3 4 4 5 5
+Miss = 5, hit = 5, ratio = 1
+
+
+The ratio will increase when the hit is increasing 
+and the ratio will be decreasing when the miss is increasing
+
+The hit will be increasing when the number of request for the page reference which is exist in physical memory is incresing. 
+In the other side, the miss will be increasing when the request for the page references which is not exist in physical memory is increasing

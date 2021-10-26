@@ -1,0 +1,2 @@
+file1(273) -> file1 link1 
+link1(273) -> file1 link1 

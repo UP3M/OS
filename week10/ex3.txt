@@ -1,0 +1,18 @@
+-rw-r--r-- 1 runner runner 10 Oct 26 17:05 _ex3.txt
+-rwxr--rwx 1 runner runner 10 Oct 26 17:05 _ex3.txt
+-rwxrwxrwx 1 runner runner 10 Oct 26 17:05 _ex3.txt
+
+uuu ggg ooo
+rwx rwx rwx
+110 110 000
+6   6   0  -> this mean Owner and Group have permissions to read, write, but not execute. However Other don't have any permissions
+
+uuu ggg ooo
+rwx rwx rwx
+111 111 101
+7   7    5 -> this mean Owner and Group have permissions to read, write and execute. However Other have permissions only to read and execute
+
+uuu ggg ooo
+rwx rwx rwx
+111 111 111
+7   7    7 -> this mean Owner, Group, and Other have permissions to read, write and execute

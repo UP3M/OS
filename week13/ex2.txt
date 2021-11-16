@@ -1,0 +1,19 @@
+Deadlock detection => graph reduction method
+Advantages: due to maximum concurrency and resource utilization, this strategy is better than deadlock prevention method
+Disadvantages: 	1) required expensive roll-back,
+		2) cycle checking overhead even if not deadlocked (this strategy can be use when deadlock prevention and deadlock avoidance are not applicable)
+use case: If deadlocks occur frequently, then the detection algorithm should be invoked frequently. 
+		Resources allocated to deadlocked processes will be idle until the deadlock can be broken. 
+		In addition, the number of processes involved in the deadlock cycle may grow.
+
+Deadlock prevention => four necessary conditions
+Advantages: Bettrer than deadlock detection due to no roll-back of processes are needed
+Disadvantages: inefficient due to preemption or low resource utilization
+sample case: in case to avoid expensive roll-back and handle deadlock without knowing a priori in the future resource requirment
+
+Deadlock avoidance => banker’s algorithm
+Advantages: in case of roll-back, this strategy is better than deadlock detection method because no roll-back of processes required
+Disadvantages:  1) safe state checking overhead, 
+		2) safe state is overly conservative estimate, 
+		3) future resource requirements must be known a priori (this strategy can be use when deadlock prevention is not applicable)
+use case: in case to dynamically assess the resource-allocation state so that there can never be a circular-wait situation.
